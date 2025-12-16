@@ -42,7 +42,17 @@ body {
     margin-left: 0px;
     padding: 10px;
   }
-  
+  .footer{
+
+    padding: 5px;
+    background: #fff;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 4px 16px, rgba(17, 17, 17, 0.1) 0px 8px 24px, rgba(17, 17, 17, 0.1) 0px 16px 56px;
+    position: fixed;
+    bottom: 0;
+    z-index:1111;
+    width: 100%;
+   text-align: center;
+  }
   .card{
     padding: 5px;
     box-shadow: rgba(17, 17, 17, 0.1) 0px 4px 16px, rgba(17, 17, 17, 0.1) 0px 8px 24px, rgba(17, 17, 17, 0.1) 0px 16px 56px;
