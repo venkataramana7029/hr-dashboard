@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: #f0f1f4  !important;
+    overflow-x: hidden;
+ }
+
+  #sidebar { 
+    transition:  0.3s ease;
+    z-index: 1000; 
+    position: fixed;
+    top: 56px;
+  }
+  .sidebar-collapsed #sidebar{   
+    margin-left: -220px;
+  }
+  #sidebar ul li a:hover {
+    background-color: #495057;
+    color: #ffc107 !important;
+  }
+  .nav-link:hover {
+    color: #d1c8ab !important;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 11;
+    left: 0;
+  }
+
+  .main{  
+    padding: 10px;
+    margin-left: 220px;
+    margin-top: 58px;
+    transition: 0.3s ease;
+  }
+  .sidebar-collapsed .main{
+    margin-left: 0px;
+    padding: 10px;
+  }
+  
+  .card{
+    padding: 5px;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 4px 16px, rgba(17, 17, 17, 0.1) 0px 8px 24px, rgba(17, 17, 17, 0.1) 0px 16px 56px;
+  }
+  .card-header{
+    background: none;
+  }
+
+  .status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  min-width: 80px;
+}
+
+/* Status Colors */
+.active {
+  background-color: #16a34a;   
+}
+
+.on-leave {
+  background-color: #f59e0b;   
+}
+
+.inactive {
+  background-color: #dc2626;   
+}
+.navbar-nav{
+  flex-direction: row;
+}
+ 
+
+@media(max-width:556px) {
+  #sidebar{
+    display: none;
+  }
+  .main{
+    margin-left: 0px;
+  }
+ .sidebar-collapsed #sidebar{
+    display: block;
+    margin-left: 0px;
+  }
+ .sidebar-collapsed .main{
+    margin-left: 220px;
+  }
+}
+@media(max-width:356px) {
+  .notification{
+    display: none;
+  }
+}
+  

@@ -1,0 +1,45 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  
+  <button class="btn text-light me-3" (click)="onMenuClick()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </button>
+  <a class="navbar-brand fw-bold text-primary" href="#">
+    HR Dashboard
+  </a>
+  <form class="d-none d-md-flex  mx-auto">
+    <input class="form-control"
+           type="search"
+           placeholder="Search here..." />
+  </form>
+
+  <ul class="navbar-nav align-items-center">
+
+    <li class="nav-item me-3 position-relative notification">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell-fill text-light" viewBox="0 0 16 16">
+        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+      </svg>
+      <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+        3
+      </span>
+    </li>
+
+    <li class="nav-item dropdown me-3">
+      <a class="nav-link dropdown-toggle"
+         role="button"
+         data-bs-toggle="dropdown">
+        <i class="bi bi-person-circle me-1"></i> Venkat
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item">Profile</a></li>
+        <li><a class="dropdown-item">Settings</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-danger">Logout</a></li>
+      </ul>
+    </li>  
+
+  </ul>
+</nav>
