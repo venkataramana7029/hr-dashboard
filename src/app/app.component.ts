@@ -21,14 +21,15 @@ export class AppComponent {
    toggleSidebar() {
     debugger
     this.isSidebarOpen = !this.isSidebarOpen;
-    if (this.isSidebarOpen) {
-      this.renderer.removeClass(document.body, 'sidebar-collapsed');
-    } else {
-      this.renderer.addClass(document.body, 'sidebar-collapsed');
-    }
+    this.updateBodyClass();
+    // if (this.isSidebarOpen) {
+    //   this.renderer.removeClass(document.body, 'sidebar-collapsed');
+    // } else {
+    //   this.renderer.addClass(document.body, 'sidebar-collapsed');
+    // }
   }
   closeSidebar() {
-    this.isSidebarOpen = false;
+    this.isSidebarOpen = true;
     this.updateBodyClass();
   }
 
