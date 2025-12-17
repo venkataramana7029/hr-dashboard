@@ -7,15 +7,20 @@ export const routes: Routes = [
     {
         path:"",
         component:DashboardComponent,
+         title:"HR Dashboard"
       
      
     },
     {
+        
         path:"dashboard",
-        component:DashboardComponent
+        component:DashboardComponent,
+        title:"HR Dashboard"
+        
     },
      {
         path:"employee",
-        component:EmployeeComponent
+        component:EmployeeComponent,
+         title:"Employee Details"
     },
 ];

@@ -1,6 +1,6 @@
 
 <app-header (sidebarToggle)="toggleSidebar()"></app-header>
-<app-sidebar></app-sidebar>
+<app-sidebar  (linkClick)="closeSidebar()"></app-sidebar>
 <div class="main" >
   <router-outlet></router-outlet>
 </div>

@@ -27,4 +27,16 @@ export class AppComponent {
       this.renderer.addClass(document.body, 'sidebar-collapsed');
     }
   }
+  closeSidebar() {
+    this.isSidebarOpen = false;
+    this.updateBodyClass();
+  }
+
+  private updateBodyClass() {
+    if (this.isSidebarOpen) {
+      this.renderer.removeClass(document.body, 'sidebar-collapsed');
+    } else {
+      this.renderer.addClass(document.body, 'sidebar-collapsed');
+    }
+  }
 }

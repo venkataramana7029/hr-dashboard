@@ -87,7 +87,11 @@ body {
 .navbar-nav{
   flex-direction: row;
 }
- 
+  @media(max-width:768px) {
+    .footer{
+      position: relative;
+    }
+  }
 
 @media(max-width:556px) {
   #sidebar{
@@ -102,6 +106,12 @@ body {
   }
  .sidebar-collapsed .main{
     margin-left: 220px;
+  }
+  h5{
+    font-size:18px;
+  }
+  td,th{
+    font-size: 0.8rem;
   }
 }
 @media(max-width:356px) {

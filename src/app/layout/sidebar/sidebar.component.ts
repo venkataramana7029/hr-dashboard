@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -9,4 +9,9 @@ import { RouterLink } from '@angular/router';
 })
 export class SidebarComponent {
 
+  @Output() linkClick = new EventEmitter<void>();
+
+  onNavClick() {
+    this.linkClick.emit();
+  }
 }
